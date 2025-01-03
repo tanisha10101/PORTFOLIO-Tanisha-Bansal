@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Mental Health Website",
+    "desc": "Developed a mental health website encompassing distinct features to manage mental health conditions. Built using HTML, CSS, Javascript.",
+    "image": "notystackandroid",
+    "category": "All projects",
+    "links": {
+      "view": "https://tanisha10101.github.io/Mental_Oasis/landing_page.html",
+      "code": "https://github.com/tanisha10101/Mental_Oasis"
+    }
+  },
+  {
+    "name": "Crop Recommendation System",
+    "desc": "Built a Crop Recommendation System using K-Nearest Neighbors (KNN), Kubernetes and Decision Tree Regressor in Python and Django.",
+    "image": "sppuprepandroid",
+    "category": "All projects",
+    "links": {
+      "view": "",
+      "code": "https://github.com/tanisha10101/Crop-Prediction-System-Baisakhi.AI"
+    }
+  },
+  {
+    "name": "Decentralized Vendor Dashboard",
+    "desc": "Implemented a frontend website for a decentralized vendor dashboard using React JS and integrated Tailwind CSS for optimal design.",
+    "image": "newsboxandroid",
+    "category": "All projects",
+    "links": {
+      "view": "https://digital-dukaandaar.vercel.app",
+      "code": "https://github.com/tanisha10101/Decentralized-Vendor-Dashboard-Digital-Dukaandar"
+    }
+  },
+  {
+    "name": "Cosmic Event Portal",
+    "desc": "The portal serves as an efficient platform for both event planners and attendees, offering valuable tools for a seamless event experience.",
+    "image": "weatherlyandroid",
+    "category": "All projects",
+    "links": {
+      "view": "https://www.figma.com/proto/rYRAqwGtg8KqjKir8Eexgi/TECH-TITANS?node-id=69-132&scaling=scale-down&page-id=0%3A1&starting-point-node-id=69%3A132&show-proto-sidebar=1",
+      "code": "https://github.com/tanisha10101/Event-Management-Portal-Cosmic-Theme"
+    }
+  },
+  {
+    "name": "Mercari Women Hackathon",
+    "desc": "Enhances engagement of women users on the Mercari app. It introduces innovative features like community reels, personalized recommendations.",
+    "image": "instagrammern",
+    "category": "All projects",
+    "links": {
+      "view": "https://www.figma.com/proto/DdYf6LsHJSBj4L8os8HWeV/Untitled?node-id=1-90&p=f&t=g4gfPqSedYYBP9IE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A90",
+      "code": "https://github.com/tanisha10101/Mercari-Hackathon"
+    }
+  },
+  {
+    "name": "Credit Card Fraud Detection",
+    "desc": "A machine learning-based system for detecting credit card fraud, designed to accurately identify unauthorized transactions, enhance financial security.",
+    "image": "flipkartmern",
+    "category": "All projects",
+    "links": {
+      "view": "https://github.com/tanisha10101/Credit-card-fraud-detection-system/",
+      "code": "https://github.com/tanisha10101/Credit-card-fraud-detection-system"
+    }
+  },
+  {
+    "name": "Melanoma Tumor Prediction",
+    "desc": "A machine learning-based model to predict the size of melanoma tumors using features related to the tumor and surrounding skin characteristics.",
+    "image": "resumegen",
+    "category": "All projects",
+    "links": {
+      "view": "https://github.com/tanisha10101/Melanoma-Tumor-Size-Prediction-Model",
+      "code": "https://github.com/tanisha10101/Melanoma-Tumor-Size-Prediction-Model"
+    }
+  },
+  {
+    "name": "Kidney Disease Prediction",
+    "desc": "Machine learning model to predict kidney disease using algorithms like Logistic Regression, Random Forest, and XGBoost for enhanced accuracy.",
+    "image": "reactprojects",
+    "category": "All projects",
+    "links": {
+      "view": "https://github.com/tanisha10101/Kidney-Disease-Prediction-Model/",
+      "code": "https://github.com/tanisha10101/Kidney-Disease-Prediction-Model"
+    }
+  },
+  {
+    "name": "Breast Cancer Detection",
+    "desc": "This project utilizes machine learning, specifically Support Vector Machines, to classify breast tumors based on diagnostic features from mammograms.",
+    "image": "flipkartphp",
+    "category": "All projects",
+    "links": {
+      "view": "https://github.com/tanisha10101/Breast-Cancer-Detection-Model",
+      "code": "https://github.com/tanisha10101/Breast-Cancer-Detection-Model"
+    }
+  }
+  
+]
