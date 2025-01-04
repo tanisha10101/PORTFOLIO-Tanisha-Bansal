@@ -1,5 +1,5 @@
 function openModal(modalId) {
-    const modal = document.getElementById(modalId); /**/
+    const modal = document.getElementById(modalId);
     modal.style.display = 'flex';
     modal.style.opacity = 0;
     modal.style.visibility = 'visible';
