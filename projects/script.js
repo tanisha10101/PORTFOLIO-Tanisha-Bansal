@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
-        if (window.scrollY > 20) {
+        if (window.scrollY > 60) {
             document.querySelector('#scroll-top').classList.add('active');
         } else {
             document.querySelector('#scroll-top').classList.remove('active');
@@ -20,12 +20,12 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Tanisha Bansal";
-           
+            document.title = "Projects | Portfolio Jigar Sable";
+            $("#favicon").attr("href", "/assets/images/favicon.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-           
+            $("#favicon").attr("href", "/assets/images/favhand.png");
         }
     });
 
@@ -65,6 +65,7 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectsHTML;
 
+ 
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
