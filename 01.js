@@ -41,3 +41,5 @@ function toggleProjects() {
         showMoreButton.innerText = 'Show More';
     }
 }
+
+
