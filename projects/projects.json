@@ -1,18 +1,21 @@
 [
   {
-    "name": "Mental Health Website",
-    "desc": "Developed a mental health website encompassing distinct features to manage mental health conditions. Built using HTML, CSS, Javascript.",
-    "image": "notystackandroid",
-    "category": "All projects",
-    "links": {
-      "view": "https://tanisha10101.github.io/Mental_Oasis/landing_page.html",
-      "code": "https://github.com/tanisha10101/Mental_Oasis"
-    }
+    
+      "name": "Mental Health Website",
+      "desc": "Developed a mental health website encompassing distinct features to manage mental health conditions. Built using HTML, CSS, Javascript.",
+      "image": "mer",
+      "category": "All projects",
+      "links": {
+        "view": "https://tanisha10101.github.io/Mental_Oasis/landing_page.html",
+        "code": "https://github.com/tanisha10101/Mental_Oasis"
+      }
+  
   },
+
   {
     "name": "Crop Recommendation System",
     "desc": "Built a Crop Recommendation System using K-Nearest Neighbors (KNN), Kubernetes and Decision Tree Regressor in Python and Django.",
-    "image": "sppuprepandroid",
+    "image": "tanisha.png",
     "category": "All projects",
     "links": {
       "view": "",
@@ -20,9 +23,9 @@
     }
   },
   {
-    "name": "Decentralized Vendor Dashboard",
+    "name": "Decentralized Vendor",
     "desc": "Implemented a frontend website for a decentralized vendor dashboard using React JS and integrated Tailwind CSS for optimal design.",
-    "image": "newsboxandroid",
+    "image": "flipkartmern",
     "category": "All projects",
     "links": {
       "view": "https://digital-dukaandaar.vercel.app",
@@ -91,3 +94,4 @@
   }
   
 ]
+
