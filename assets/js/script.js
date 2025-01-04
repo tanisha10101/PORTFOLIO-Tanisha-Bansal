@@ -88,28 +88,66 @@ function showSkills(skills) {
     skillsContainer.innerHTML = skillHTML;
 }
 
+
+
+
 function showProjects(projects) {
-    let projectsContainer = document.querySelector("#work .box-container");
-    let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
-        projectHTML += `
-        <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>`
+    const projectsContainer = document.querySelector(".work .box-container");
+    let projectsHTML = "";
+
+    projects.forEach(project => {
+        const imagePath = `/assets/images/projects/${project.image}`;
+        projectsHTML += `
+        <div class="grid-item ${project.category}">
+            <div class="box tilt" style="width: 350px; margin: 0.5rem">
+                <img draggable="false" src="${imagePath}" alt="${project.name}" onerror="this.src='/assets/images/projects/default.png'">
+                <div class="content">
+                    <div class="tag">
+                        <h3>${project.name}</h3>
+                    </div>
+                    <div class="desc">
+                        <p>${project.desc}</p>
+                        <div class="btns">
+                            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
     });
-    projectsContainer.innerHTML = projectHTML;
+
+    projectsContainer.innerHTML = projectsHTML;
+
+    // Initialize Isotope after dynamically adding the items
+    const $grid = $(".box-container").isotope({
+        itemSelector: ".grid-item",
+        layoutMode: "fitRows",
+        masonry: {
+            columnWidth: 200
+        }
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fetch projects and display them dynamically
+        getProjects().then(data => {
+            showProjects(data);
+        });
+    
+        // Handle Isotope filter buttons (for projects page)
+        $(".button-group").on("click", "button", function () {
+            $(".button-group").find(".is-checked").removeClass("is-checked");
+            $(this).addClass("is-checked");
+            const filterValue = $(this).attr("data-filter");
+            $(".box-container").isotope({ filter: filterValue });
+        });
+    });
+    
+
+
+
+
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -167,41 +205,42 @@ document.onkeydown = function (e) {
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',
-    distance: '50px', // Reduced distance for a quicker effect
-    duration: 500, // Reduced duration for faster animations
-    reset: true
+    distance: '30px', // Reduced distance for quicker appearance
+    duration: 400,    // Reduced duration for faster animations
+    reset: false      // Disable reset for better performance
 });
 
 /* SCROLL HOME */
-srtop.reveal('.home .content h3', { delay: 100 });
-srtop.reveal('.home .content p', { delay: 100 });
-srtop.reveal('.home .content .btn', { delay: 100 });
+srtop.reveal('.home .content h3', { delay: 50 });
+srtop.reveal('.home .content p', { delay: 50 });
+srtop.reveal('.home .content .btn', { delay: 50 });
 
-srtop.reveal('.home .image', { delay: 200 });
-srtop.reveal('.home .linkedin', { interval: 300 });
-srtop.reveal('.home .github', { interval: 400 });
+srtop.reveal('.home .image', { delay: 100 });
+srtop.reveal('.home .linkedin', { interval: 100 });
+srtop.reveal('.home .github', { interval: 100 });
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 100 });
-srtop.reveal('.about .content .tag', { delay: 100 });
-srtop.reveal('.about .content p', { delay: 100 });
-srtop.reveal('.about .content .box-container', { delay: 100 });
-srtop.reveal('.about .content .resumebtn', { delay: 100 });
+srtop.reveal('.about .content h3', { delay: 50 });
+srtop.reveal('.about .content .tag', { delay: 50 });
+srtop.reveal('.about .content p', { delay: 50 });
+srtop.reveal('.about .content .box-container', { delay: 50 });
+srtop.reveal('.about .content .resumebtn', { delay: 50 });
 
 /* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 100 });
-srtop.reveal('.skills .container .bar', { delay: 200 });
+srtop.reveal('.skills .container', { interval: 50 });
+srtop.reveal('.skills .container .bar', { delay: 100 });
 
 /* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 100 });
+srtop.reveal('.education .box', { interval: 50 });
 
 /* SCROLL PROJECTS */
-srtop.reveal('.work .box', { interval: 100 });
+srtop.reveal('.work .box', { interval: 50 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline', { delay: 200 });
-srtop.reveal('.experience .timeline .container', { interval: 200 });
+srtop.reveal('.experience .timeline', { delay: 100 });
+srtop.reveal('.experience .timeline .container', { interval: 100 });
 
 /* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 200 });
-srtop.reveal('.contact .container .form-group', { delay: 200 });
+srtop.reveal('.contact .container', { delay: 100 });
+srtop.reveal('.contact .container .form-group', { delay: 100 });
+
