@@ -2,7 +2,6 @@
 
 Crafted with care and a touch of creativity, this portfolio website showcases a clean design, interactive features, and a seamless user experience using **HTML5**, **CSS3**, **JavaScript**, and **jQuery**.
 
-<a href="https://tanishabansalportfolio.netlify.app" target="_blank"><strong>🚀 Explore the Website</strong></a>
 
 
 ---
